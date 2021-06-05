@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dogs</string>
+    <string name="title_activity_cadastro_pessoa">CadastroPessoaActivity</string>
+</resources>

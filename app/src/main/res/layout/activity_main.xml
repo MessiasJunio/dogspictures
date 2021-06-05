@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.dogs.controller.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Escolha uma Raça"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mainactivity_btnBulldog"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bulldog"
+                    android:onClick="cliqueRaca" />
+
+                <Button
+                    android:id="@+id/mainactivity_btnTerrier"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bullterrier"
+                    android:onClick="cliqueRaca" />
+
+                <Button
+                    android:id="@+id/mainactivity_btnDoberman"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/doberman"
+                    android:onClick="cliqueRaca" />
+
+                <Button
+                    android:id="@+id/main_btnSair"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sair"
+                    android:onClick="sairClique" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mainactivity_btnGolden"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/goldenretriever"
+                    android:onClick="cliqueRaca" />
+
+                <Button
+                    android:id="@+id/mainactivity_btnPitBull"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pitbull"
+                    android:onClick="cliqueRaca" />
+
+                <Button
+                    android:id="@+id/mainactivity_btnPoodle"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/poogle"
+                    android:onClick="cliqueRaca" />
+
+                <Button
+                    android:id="@+id/main_btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/loginbutton"
+                    android:onClick="loginClique" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
